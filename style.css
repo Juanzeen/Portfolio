@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,100;1,300&display=swap');
+
+:root{
+    --base-text-color: #000;
+    --base-bg-color: #fff;
+    --dark-text-color: #fff;
+    --dark-bg-color: #000;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+body{
+    color: white;
+    font-family: Poppins, sans-serif;
+}
+
+header{
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    
+}
+
+#headertxt{
+    width: 40vw;
+    text-align: center;
+    margin-left: 15px;
+}
+
+#profile{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    height: 10vh;
+    width: 30vw;
+}
+
+#ghphoto{
+    border-radius: 50px;
+    margin: 0px 10px 0px 5px;
+}
+
+
+
+#colormodediv{
+    border: 1px solid white;
+    border-radius: 50px;
+    padding: 7px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+#colormodediv:hover{
+    background-color: rgb(255,255,255);
+    color: rgb(0,0,0);
+    transition: 1s;
+}
+
+#colormodelabel{
+    cursor: pointer;
+}
+
+#colormode{
+    display: none;
+}
+
+#backclmode{
+    display: flex;
+    justify-content: flex-end;
+    border: none;
+    width: 30vw;
+}
+
+main{
+    width: 100vw;
+    height: 90vh;
+    background-color: #000;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+#maintxt1{
+    width: 40vw;
+    height: 40vh;
+    text-align: center;
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 60px;
+}
+
+#projects{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 180vh;
+}
+
+.projectscontainer{
+    width: 80vw;
+    height: 20vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.projectsimages{
+    width: 50%;
+}
+
+.containerprojectsimages{
+    width: 50vw;
+}
+
+.projectstxt{
+    width: 50vw;
+    text-align: center;
+}
+
+.projectsdesctxt{
+    font-style: italic;
+}
+
+@media screen and (max-width:900px){
+    #profile{
+        font-size: 13px;
+    }
+
+    #photodesc{
+        flex-wrap: nowrap;
+    }
+
+    #photodesc p{
+        display: none;
+    }
+
+    #projects{
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width:580px){
+    #photodesc{
+        width: 50%;
+    }
+
+    #alignphoto{
+        width: 50%;
+    }
+}
