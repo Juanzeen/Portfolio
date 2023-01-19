@@ -11,7 +11,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow: hidden;
+    
 }
 
 a{
@@ -22,6 +22,7 @@ a{
 body{
     color: white;
     font-family: Poppins, sans-serif;
+    overflow-x: hidden;
 }
 
 header{
@@ -139,6 +140,32 @@ main{
     font-style: italic;
 }
 
+footer{
+    height: 15vh;
+    width: 100vw;
+    background-color: #000;
+    display: flex;
+    display: flex;
+    flex-direction:column ;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.footerphoto{
+    width: 35px;
+    height: 35px;
+}
+
+.footerphoto:first-child{
+    margin-right: 10px;
+}
+
+#footerphotos{
+    display: flex;
+}
+
 @media screen and (max-width:900px){
     #profile{
         font-size: 13px;
@@ -157,7 +184,7 @@ main{
     }
 }
 
-@media screen and (max-width:580px){
+@media screen and (max-width:600px){
     #photodesc{
        display: none;
     }
