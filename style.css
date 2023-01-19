@@ -159,10 +159,8 @@ main{
 
 @media screen and (max-width:580px){
     #photodesc{
-        width: 50%;
+       display: none;
     }
 
-    #alignphoto{
-        width: 50%;
-    }
+   
 }
