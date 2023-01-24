@@ -14,10 +14,25 @@
     
 }
 
+
 a{
     text-decoration: none;
     color: white;
 }
+
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #000;        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: white;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 1px solid white;  /* creates padding around scroll thumb */
+  }
 
 body{
     color: white;
@@ -60,7 +75,7 @@ header{
     border: 1px solid white;
     border-radius: 50px;
     padding: 7px;
-    margin-right: 5px;
+    margin-right: 15px;
     cursor: pointer;
 }
 
@@ -145,7 +160,6 @@ footer{
     width: 100vw;
     background-color: #000;
     display: flex;
-    display: flex;
     flex-direction:column ;
     align-items: center;
     justify-content: center;
@@ -187,6 +201,10 @@ footer{
 @media screen and (max-width:600px){
     #photodesc{
        display: none;
+    }
+
+    .projectsimages{
+        width: 80%;
     }
 
    
